@@ -1,0 +1,45 @@
+.taskItem{
+    width: 500px;
+    max-height: 550px;
+    border: 2px solid cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+    .contentArea{
+        width: 80%;
+        word-wrap: break-word;
+        word-break: break-word;
+        overflow-wrap: break-word;
+
+        .title{
+            font-size: 22px;
+        }
+        .description{
+            font-size: 22px;
+        }
+    }
+
+    .controlsArea{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+
+        > button{
+            width: 100%;
+            max-height: 50px;
+            height: 40%;
+            border: 2px solid cadetblue;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            transition: .2s;
+        }
+        > button:hover{
+            background-color: rgba(209, 209, 209, 0.57);
+            color: #000;
+        }
+    }
+}
